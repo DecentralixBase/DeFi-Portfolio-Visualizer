@@ -1,33 +1,30 @@
-# 🦇 DeFi Portfolio Visualizer
+# DeFi Portfolio Visualizer
 
-A futuristic DeFi portfolio visualization tool inspired by Tony Stark's JARVIS and Batman's computer interface. Enter any Ethereum address or ENS name to view their complete DeFi portfolio with a stunning, animated UI.
+A futuristic DeFi portfolio visualization tool with a Stark/Batman theme. Built with Next.js, TypeScript, and Tailwind CSS.
 
-## ✨ Features
+## Features
 
-- 🎨 Dark neon glassmorphism theme with animated backgrounds
-- 📊 Interactive portfolio visualization with animated charts
-- 🔍 ENS resolution support
-- 💰 Real-time token prices and portfolio valuation
-- 📈 Protocol, chain, and token type breakdowns
-- 🎯 Risk scoring and APY tracking
-- 🦇 Secret "BATMODE" UI (Press 'B' to activate)
+- 🌑 Dark neon theme with Batman-inspired design
+- 📊 Interactive portfolio visualizations
+- 🔄 Animated node graph background
+- 🦇 Batman mode easter egg
+- 📱 Fully responsive design
 
-## 🚀 Tech Stack
+## Tech Stack
 
-- Next.js 14 with App Router
+- Next.js 13 (App Router)
 - TypeScript
 - Tailwind CSS
 - Framer Motion
 - Recharts
-- Ethers.js
-- Zapper/Covalent API
+- Radix UI
 
-## 🛠 Getting Started
+## Getting Started
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/defi-portfolio-visualizer.git
-cd defi-portfolio-visualizer
+git clone https://github.com/yourusername/DeFi-Portfolio-Visualizer.git
+cd DeFi-Portfolio-Visualizer
 ```
 
 2. Install dependencies:
@@ -35,46 +32,27 @@ cd defi-portfolio-visualizer
 npm install
 ```
 
-3. Create a `.env.local` file with your API keys:
-```
-NEXT_PUBLIC_INFURA_API_KEY=your_infura_api_key
-NEXT_PUBLIC_COVALENT_API_KEY=your_covalent_api_key
-NEXT_PUBLIC_ZAPPER_API_KEY=your_zapper_api_key
-```
-
-4. Run the development server:
+3. Run the development server:
 ```bash
 npm run dev
 ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 🎮 Usage
+## Build and Deploy
 
-1. Enter an Ethereum address or ENS name in the search bar
-2. View the complete portfolio breakdown with interactive charts
-3. Explore different aspects of the portfolio:
-   - Total value and 24h change
-   - Token balances and values
-   - Protocol distribution
-   - Chain distribution
-   - Token type breakdown
-4. Press 'B' to activate the secret BATMODE interface
+To create a production build:
 
-## 🎨 UI Components
+```bash
+npm run build
+```
 
-- Animated node graph background
-- Glassmorphism panels with neon accents
-- Interactive charts and graphs
-- Responsive design for all screen sizes
-- Dark mode optimized
+To start the production server:
 
-## 📝 License
+```bash
+npm start
+```
 
-MIT License - feel free to use this project for learning or building your own portfolio visualizer!
+## License
 
-## 🙏 Acknowledgments
-
-- Inspired by sci-fi interfaces from Iron Man and Batman
-- Built with modern web technologies and DeFi APIs
-- Special thanks to the DeFi community 
+MIT 
