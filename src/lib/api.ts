@@ -1,4 +1,3 @@
-import { ethers } from 'ethers'
 import { Portfolio, Token, Chain, TokenType } from './types'
 
 // Mock data for demonstration

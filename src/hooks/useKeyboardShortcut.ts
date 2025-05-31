@@ -1,12 +1,13 @@
 import { useEffect, useCallback } from 'react'
 
-type KeyHandler = (e: KeyboardEvent) => void
-type KeyMap = { [key: string]: KeyHandler }
+export type KeyHandler = (e: KeyboardEvent) => void
+export type KeyMap = { [key: string]: KeyHandler }
 
 export function useKeyboardShortcut(keyMap: KeyMap) {
   const handleKeyPress = useCallback((e: KeyboardEvent) => {
     const handler = keyMap[e.key.toLowerCase()]
-    if (handler) {
+    if (handler && !e.repeat && !e.metaKey && !e.ctrlKey) {
+      e.preventDefault()
       handler(e)
     }
   }, [keyMap])
